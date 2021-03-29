@@ -66,7 +66,7 @@ def main():
             if new_homework.get('homeworks'):
                 send_message(
                     parse_homework_status(
-                        new_homework.get('homeworks')[0])
+                        new_homework.get('homeworks')[0]), bot
                 )
             current_timestamp = new_homework.get(
                 'current_date',
