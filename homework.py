@@ -58,13 +58,13 @@ def get_homework_statuses(current_timestamp):
 
 
 def send_message(message, bot_client):
-    logger.info(f'Бот отправил сообщение')
+    logger.info('Бот отправил сообщение')
     return bot_client.send_message(chat_id=CHAT_ID, text=message)
 
 
 def main():
     current_timestamp = int(time.time())  # начальное значение timestamp
-    logger.debug(f'Бот начал свою работу')
+    logger.debug('Бот начал свою работу')
 
     while True:
         try:
