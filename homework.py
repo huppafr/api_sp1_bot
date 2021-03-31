@@ -5,7 +5,6 @@ import time
 import requests
 import telegram
 from dotenv import load_dotenv
-from telegram import message
 
 load_dotenv()
 
@@ -18,7 +17,6 @@ UNAPPROVED = 'К сожалению в работе нашлись ошибки.
 BOT_ENCOUNTERED_ERROR = 'Бот столкнулся с ошибкой'
 STATUS_ERROR = 'Ошибка получения статуса работы'
 MY_BOT = telegram.Bot(token=TELEGRAM_TOKEN)
-
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
